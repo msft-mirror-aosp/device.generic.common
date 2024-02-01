@@ -38,11 +38,6 @@ PRODUCT_PACKAGES += \
     hwservicemanager \
     android.hidl.allocator@1.0-service
 
-# An example of a service that must be provided by vendors. This service resides on
-# system_ext and is used by the audio server.
-PRODUCT_PACKAGES += \
-    android.hardware.audio.parameter_parser.example_service
-
 # Install a copy of the debug policy to the system_ext partition, and allow
 # init-second-stage to load debug policy from system_ext.
 # This option is only meant to be set by compliance GSI targets.
