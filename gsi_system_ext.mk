@@ -30,6 +30,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfig
 
+# Add all of the packages used to support older/upgrading devices
+# These can be removed as we drop support for the older API levels
+PRODUCT_PACKAGES += \
+    $(PRODUCT_PACKAGES_SHIPPING_API_LEVEL_29) \
+    $(PRODUCT_PACKAGES_SHIPPING_API_LEVEL_33) \
+    $(PRODUCT_PACKAGES_SHIPPING_API_LEVEL_34)
+
 # Install a copy of the debug policy to the system_ext partition, and allow
 # init-second-stage to load debug policy from system_ext.
 # This option is only meant to be set by compliance GSI targets.
