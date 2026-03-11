@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += preinstalled-packages-handheld-system-ext.xml
 
 #  telephony packages
 PRODUCT_PACKAGES += \
-    CarrierConfig
+    CarrierConfig \
+    preinstalled-packages-gsi-system-ext.xml \
 
 # Add all of the packages used to support older/upgrading devices
 # These can be removed as we drop support for the older API levels
