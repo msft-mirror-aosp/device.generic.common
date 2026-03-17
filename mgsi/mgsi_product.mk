@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     frameworks-base-overlays \
     LatinIME \
     Provision \
+    preinstalled-packages-mgsi-product.xml \
 
 # Default AOSP sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
